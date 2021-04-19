@@ -1,0 +1,509 @@
+/******************************************************************
+Project Name: Educafe LMS;
+Designer / Developer Name: Mr. X;
+Clinet Name: Mr.Y;
+Project Start Date: 11-04-2021;
+Project Submission Date: 15-04-21;
+Project Page : 7;
+--------------------------------------------------------------------
+		Home Page
+	-----------------
+	1.TopBar
+	2.Navbar
+	3.Slider
+	4.AboutUS
+	5.Courses
+	6.Facts
+	7.RecentNews
+	8.Testimoinal
+	9.CTA
+	10.Footer
+----------------------------------------------------------------------
+***********************************************************************/
+
+
+/*Google Font CDN Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/***************************************************************************
+			Base CSS Start
+****************************************************************************/
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif !important;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+h4{
+	color: #1b1b1b;
+	font-weight: 600;
+}
+
+/***************************************************************************
+			Base CSS End
+****************************************************************************/
+/***************************************************************************
+			Common CSS Start
+****************************************************************************/
+.primary-bg{
+	background-color: #56ab2f !important;
+}
+.secondary-bg{
+	background-color: #000022 !important;
+}
+.primary-color{
+	color: #56ab2f !important;
+}
+.secondary-color{
+	color: #000022 !important;
+}
+.primary-btn{
+	background-color: #56ab2f !important;
+	border: 1px solid #56ab2f !important;
+	color: #f1f1f1 !important;
+}
+.primary-btn:hover{
+	background-color: #ff4f81 !important;
+	color: #fff !important;
+	border: 1px solid #ff4f81 !important;
+}
+.secondary-btn{
+	background-color: transparent !important;
+	color: #000022 !important;
+	border: 1px solid #56ab2f !important;
+}
+.secondary-btn:hover{
+	background-color: #ff4f81 !important;
+	color: #fff !important;
+	border: 1px solid #ff4f81 !important;
+}
+.card-hover:hover{
+	border-color:  #56ab2f !important;
+}
+/************************************************************************
+			Common CSS End
+*************************************************************************/
+/************************************************************************
+			Owl Carsoul CSS Start
+*************************************************************************/
+.owl-carousel .owl-nav button.owl-next,
+ .owl-carousel .owl-nav button.owl-prev{
+    background-color: transparent;
+    position: absolute;
+    top: 40%;
+    font-size: 45px;
+    color: #000022;
+}
+.owl-carousel .owl-nav button.owl-next{
+	right: -5%;
+}
+
+ .owl-carousel .owl-nav button.owl-prev{
+    left: -5%;
+}
+.owl-carousel .owl-nav button.owl-next:hover,
+ .owl-carousel .owl-nav button.owl-prev:hover{
+    background-color: transparent;
+    color: #56ab2f !important;
+}
+.owl-carousel .owl-nav button.owl-next:focus,
+ .owl-carousel .owl-nav button.owl-prev:focus{
+    background-color: transparent;
+    outline: none;
+}
+/***********************************************************************
+			Owl Carsoul CSS End
+************************************************************************/
+
+/***********************************************************************
+			Topbar CSS Start
+************************************************************************/
+.topbar{
+	height: 49px;
+	line-height: 49px;
+}
+.topbar-left li{
+	font-size: 14px;
+	padding-left: 20px;
+}
+.topbar-left li:first-child{
+	padding: 0;
+}
+.topbar-right li{
+	font-size: 14px;
+}
+.topbar-right li:first-child::after{
+	content: "|";
+	color: #000022;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*********************************************************************
+			Topbar CSS End
+**********************************************************************/
+/*********************************************************************
+			Navbar CSS Start
+**********************************************************************/
+.margin-left-5{
+	margin-left: -5px;
+	font-size: 10px;
+}
+.nav-link{
+	font-weight: bold;
+	color: #000022 !important;
+}
+.nav-link:focus{
+	color: #56ab2f !important;
+}
+.active .nav-link{
+	color: #56ab2f !important;
+}
+/********************************************************************
+			Navbar CSS End
+*********************************************************************/
+/********************************************************************
+			Slider CSS Start
+*********************************************************************/
+.slide-position-absolute{
+	position: absolute;
+	left: 55%;
+	top: 40%;
+}
+/********************************************************************
+			Slider CSS End
+*********************************************************************/
+/********************************************************************
+			AboutUS CSS Start
+*********************************************************************/
+.word-space-10{
+	word-spacing: 10px !important;
+}
+.line-height-30{
+	line-height: 30px !important; 
+}
+.background-academy{
+	background: url('../img/academy/academy.png');
+}
+.principle{
+	max-height: 300px;
+	max-width: 300px;
+	margin-left: -100px;
+	margin-top: 60px;
+	margin-bottom: -30px;
+}
+/*******************************************************************
+			AboutUS CSS End
+********************************************************************/
+/*******************************************************************
+			Courses CSS Start
+********************************************************************/
+.line{
+	width: 120px;
+	border-bottom: 2px solid #cfcfcf;
+	position: relative;
+	left: 33%;
+}
+
+/********************************************************************
+			Courses CSS End
+*********************************************************************/
+/********************************************************************
+			Facts CSS Start
+********************************************************************/
+.facts{
+	background: url('../img/facts/facts.png');
+	background-attachment: fixed;
+}
+
+/******************************************************************
+			Facts CSS End
+*******************************************************************/
+/******************************************************************
+			Testimonial CSS Start
+*******************************************************************/
+
+.testimonial{
+	background: url('../img/testimonial/bg.png');
+}
+.testimonial-img{
+	max-width: 120px !important;
+	max-height: 120px !important;
+	margin: 0px auto !important;
+	margin-bottom: -15% !important;
+}
+.testimonial-border{
+	border: 30px solid transparent;
+	border-image: url('../img/testimonial/border-imgae.png') 50% round;
+	border-top: none;
+}
+
+/******************************************************************
+			Testimonial CSS End
+*******************************************************************/
+
+/******************************************************************
+			CTA CSS Start
+*******************************************************************/
+::placeholder{
+color: #f1f1f1;
+}
+.cta-email{
+	height: 40px;
+    width: 30%;
+    border: 1px solid #f1f1f1;
+    background: transparent;
+    outline: none;
+    padding-left: 10px;
+}
+
+.cta-btn{
+	outline: 2px solid rgba(255,255,255,.5);
+}
+/******************************************************************
+			CTA CSS End
+*******************************************************************/
+/******************************************************************
+			Footer CSS Start
+*******************************************************************/
+
+.footer{
+	background: #1e1d1d;
+}
+.line-height-30 li{
+	line-height: 35px;
+}
+.footer-bottom{
+	border-top: 2px solid  #56ab2f !important;
+}
+.footer-icon li{
+	margin-left: 10px;
+	height: 35px;
+	width: 35px;
+	line-height: 35px;
+	background: transparent;
+	border-radius: 50%;
+	border:1px solid #f1f1f1;
+}
+.footer-icon li a{
+	padding: 5px;
+	color: #f1f1f1;
+}
+.footer-icon li:hover a{
+	color:#56ab2f;
+}
+/******************************************************************
+			Footer CSS End
+*******************************************************************/
+/****************************************************************
+			ABOUT US PAGE CSS START
+****************************************************************/
+
+.teacher-body-top-border{
+	border-top: 1px solid #56ab2f  ;
+} 
+.teacher-img:hover{
+	border: none !important;
+}
+.card-body p{
+	color: #666666;
+}
+.social-icon{
+	position: absolute;
+	content: "";
+	top: 0;
+	right: -100%;
+	bottom: 0;
+	transition: 0.5s;
+}
+.card-img:hover .social-icon{
+	right: 0;
+}
+.social-icon ul li{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	height: 35px;
+	width: 35px;
+	line-height: 35px;
+	background: transparent;
+	border-radius: 50%;
+	border:1px solid #f1f1f1;	
+}
+.social-icon ul li a{
+	padding: 5px;
+	color: #f1f1f1;
+}
+.social-icon ul li:hover{
+	background: #fff;
+}
+.social-icon ul li:hover a{
+	color:#56ab2f;
+}
+/*/***************************************************************
+			ABOUT US PAGE CSS END
+/****************************************************************/
+/****************************************************************
+			COURSE PAGE CSS START
+/****************************************************************/
+.title-header{
+	position: relative;
+}
+.title-header::before{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	background:#56ab2f;
+	width: 70px;
+	height: 2px;
+}
+/***************************************************************
+			COURSE PAGE CSS END
+***************************************************************/
+/**************************************************************
+			Course details Page CSS Start
+***************************************************************/
+.feature table tr td, .feature table tfoot th{
+	border: none;
+}
+.instructor-social-icon ul li{
+
+	margin-right: 10px;
+	margin-top: 10px;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	background: #fff;
+	border-radius: 50%;
+	border:1px solid #d7d6d6;
+}
+.instructor-social-icon ul li a{
+	padding: 5px;
+	color: #000;
+}
+.instructor-social-icon ul li:hover{
+	background: #fff;
+}
+.instructor-social-icon ul li:hover a{
+	color:#56ab2f;
+}
+.instructor-social-icon ul li a i{
+    transition: .4s;
+ }
+ .instructor-social-icon ul li a:hover i{
+   transform: rotate(360deg);
+}
+..instructor-pagination nav ul li.active a{
+	background: #56ab2f !important;
+	border: none;
+}
+/**************************************************************
+			Course details Page CSS End
+***************************************************************/
+/***************************************************************
+			TEACHER PAGE CSS START
+***************************************************************/
+.teacher-social-icon ul li{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	height: 35px;
+	width: 35px;
+	line-height: 35px;
+	background: transparent;
+	border-radius: 50%;
+	border:1px solid #f1f1f1;	
+}
+.teacher-social-icon ul li a{
+	padding: 5px;
+	color: #000;
+}
+.teacher-social-icon ul li:hover{
+	background: #fff;
+}
+.teacher-social-icon ul li:hover a{
+	color:#56ab2f;
+}
+.teacher-social-icon ul li a i{
+    transition: .4s;
+ }
+.teacher-social-icon ul li a:hover i{
+   transform: rotate(360deg);
+}
+.teacher-pagination nav ul li.active a{
+	background: #56ab2f !important;
+	border: none;
+}
+/**************************************************************
+			TEACHER PAGE CSS END
+***************************************************************/
+/**************************************************************
+			Contact Page CSS Start
+***************************************************************/
+
+.icon ul li a i{
+	background: #56ab2f;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	color: #fff;
+	padding: 10px;
+}
+
+/**************************************************************
+			Contact Page CSS End
+***************************************************************/
+
+
+/**************************************************************
+		  404 PAGE CSS STAR
+****************************************************************/
+/***************************************************************
+			Banner CSS Start
+****************************************************************/
+.banner{
+    background: url("../img/banner/banner.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 230px;
+    position: relative; 
+}
+.banner .dark-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+}
+.banner .breadcrumb .breadcrumb-item.active a{
+    color:#8bc34a !important;
+}
+/********************************************************************
+			Banner CSS End
+*********************************************************************/
+/********************************************************************
+			Content CSS Start
+*********************************************************************/
+.content-area h2{
+	font-size: 146px;
+	color: #090707;
+}
+/********************************************************************
+			Content CSS End
+*********************************************************************/
+/*===================================================================
+		  404 PAGE CSS END
+=====================================================================*/
